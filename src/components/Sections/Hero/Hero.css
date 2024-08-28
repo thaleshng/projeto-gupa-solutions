@@ -1,0 +1,103 @@
+section {
+    background-color: rgba(34, 0, 58, 0.8);
+    color: #fff;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 127px;
+}
+
+.hero-container {
+    max-width: 1920px;
+    width: 100%;
+}
+
+.hero .hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    max-width: max-content;
+    animation: typing-instant 2s steps(25);
+}
+
+span {
+    font-family: "Evanston Tavern", "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 120px;
+    background: linear-gradient(135deg, #3f026b, #92015d, #19002b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    border-right: 4px solid #FFF;
+    animation: gradientAnimation 3s ease infinite, blinking 0.5s infinite step-end alternate;
+    position: relative;
+    top: -60px;
+}
+
+.hero-container a {
+    color: #FFF;
+    align-self: center;
+    padding: 15px;
+    border-radius: 50px;
+    background-color: #92015d;
+    border: 1px solid #92015d;
+    color: #22003a;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.hero-container a:hover {
+    background-color: transparent;
+    color: #92015d;
+    box-shadow:
+        0 0 12px #92015d,
+        0 0 20px #92015d;
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes typing-instant {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 25ch;
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
