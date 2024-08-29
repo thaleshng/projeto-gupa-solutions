@@ -1,7 +1,12 @@
-import { SectionHero } from "../Sections/Hero/Hero"
+import { About } from "../About/About"
+import { Hero } from "../Sections/Hero/Hero"
 
 export const Main = () => {
     return (
-        <SectionHero />
+        <>
+        <Hero />
+        <About />
+        </>
+        
     )
 }

@@ -1,18 +1,13 @@
-section {
-    background-color: rgba(34, 0, 58, 0.8);
-    color: #fff;
-    height: 85vh;
+.hero {
+    background-color: var(--color-primary-opacity);
+    color: var(--font-color-white);
+    height: 98vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 127px;
-}
-
-.hero-container {
-    max-width: 1920px;
-    width: 100%;
+    padding-top: 130px;
 }
 
 .hero .hero-video {
@@ -26,7 +21,13 @@ section {
     pointer-events: none;
 }
 
-h1 {
+.hero .hero-container {
+    max-width: 1920px;
+    width: 100%;
+}
+
+
+.hero .hero-container .hero-title {
     font-weight: 300;
     font-size: 80px;
     white-space: nowrap;
@@ -36,11 +37,11 @@ h1 {
     animation: typing-instant 2s steps(25);
 }
 
-span {
+.hero .hero-container .hero-title span {
     font-family: "Evanston Tavern", "Poppins", sans-serif;
     font-weight: 500;
     font-size: 120px;
-    background: linear-gradient(135deg, #3f026b, #92015d, #19002b);
+    background: linear-gradient(135deg, var(--color-purple-light), var(--color-secondary), var(--color-dark-purple));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -51,53 +52,22 @@ span {
     top: -60px;
 }
 
-.hero-container a {
+.hero .hero-container a {
     color: #FFF;
     align-self: center;
     padding: 15px;
     border-radius: 50px;
-    background-color: #92015d;
-    border: 1px solid #92015d;
-    color: #22003a;
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+    color: var(--color-primary);
     font-size: 20px;
     transition: 0.3s ease-in-out;
 }
 
-.hero-container a:hover {
+.hero .hero-container a:hover {
     background-color: transparent;
-    color: #92015d;
+    color: var(--color-secondary);
     box-shadow:
-        0 0 12px #92015d,
-        0 0 20px #92015d;
-}
-
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-@keyframes typing-instant {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 25ch;
-    }
-}
-
-@keyframes blinking {
-    50% {
-        border-color: transparent;
-    }
+        0 0 12px var(--color-secondary),
+        0 0 20px var(--color-secondary);
 }

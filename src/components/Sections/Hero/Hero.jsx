@@ -1,7 +1,7 @@
 import "./Hero.css"
 import heroVideo from "../../../assets/video/bg-tech.mp4"
 
-export const SectionHero = () => {
+export const Hero = () => {
     return (
         <section className="hero">
             <video autoPlay muted loop className="hero-video">
@@ -9,9 +9,7 @@ export const SectionHero = () => {
                     Seu navegador não suporta o elemento de vídeo.
             </video>
             <div className="hero-container">
-                
-
-                <h1>Nós somos, <br /><span>GUPASOLUTIONS.</span></h1>
+                <h1 className="hero-title">Nós somos, <br /><span>GUPASOLUTIONS.</span></h1>
 
                 <a href="#">Baixe nosso portfólio</a>
             </div>

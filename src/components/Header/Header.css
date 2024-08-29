@@ -1,9 +1,10 @@
 header {
-    background-color: #19002b;
+    background-color: var(--color-dark-purple-opacity);
     padding: 10px 0;
     position: fixed;
     width: 100%;
     z-index: 1;
+    backdrop-filter: blur(5px);
 }
 
 header .menu {
@@ -22,28 +23,22 @@ header .menu .logo:hover {
     transform: scale(1.05);    
 }
 
-nav ul {
+header .menu .navbar ul {
     display: flex;
 }
 
-nav ul li a {
+header .menu .navbar ul li a {
     padding: 10px;
     font-size: 18px;
-    color: #FFF;
+    color: var(--font-color-white);
     border-radius: 10px;
     transition: 0.3s ease-in-out;
 }
 
-nav ul li a:hover {
-    background: #92015d;
-    color: #22003a;
+header .menu .navbar ul li a:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
     box-shadow: 
-    0 0 12px #92015d,
-    0 0 20px #92015d;
+    0 0 12px var(--color-secondary),
+    0 0 20px var(--color-secondary);
 }
-
-/* header {
-    background: linear-gradient(135deg, #4B0082, #8A2BE2, #C71585);
-    background-size: 200% 200%;
-    animation: gradientAnimation 10s ease infinite;
-} */

@@ -7,11 +7,11 @@ export const Header = () => {
             <div className="menu">
                 <a href="#" className="logo"><img src={logo} alt="Logo" height={"100px"}/></a>
 
-                <nav>
+                <nav className="navbar">
                     <ul>
-                        <li><a href="#" className="gradient-text">Sobre</a></li>
-                        <li><a href="#" className="gradient-text">Serviços</a></li>
-                        <li><a href="#" className="gradient-text">Contato</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Contato</a></li>
                     </ul>
                 </nav>
             </div>
