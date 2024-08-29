@@ -1,0 +1,42 @@
+:root {
+    --color-dark-purple: #19002B;
+    --color-dark-purple-opacity: rgba(25, 0, 43, 0.95);
+    --color-purple-light: #3f026b;
+
+    --color-primary: #22003A;
+    --color-primary-opacity: rgba(34, 0, 58, 0.8);
+    --color-secondary: #92015D;
+    
+
+    --font-color-white: #FFF;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes typing-instant {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 25ch;
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
