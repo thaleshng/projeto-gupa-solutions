@@ -5,6 +5,7 @@ header {
     width: 100%;
     z-index: 1;
     backdrop-filter: blur(5px);
+    border-bottom: 2px solid var(--color-purple-light);
 }
 
 header .menu {

@@ -6,9 +6,11 @@
     --color-primary: #22003A;
     --color-primary-opacity: rgba(34, 0, 58, 0.8);
     --color-secondary: #92015D;
-    
 
     --font-color-white: #FFF;
+    --font-color-gray: #CCC;
+
+    --color-gray-opacity: rgba(204, 204, 204,0.3);
 }
 
 @keyframes gradientAnimation {

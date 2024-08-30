@@ -1,0 +1,109 @@
+.services {
+    background-color: var(--color-dark-purple);
+    padding: 70px 0;
+    color: var(--font-color-white);
+}
+
+.services span:not(h2 span) {
+    padding: 5px;
+    border: 3px solid var(--color-secondary);
+    border-radius: 50%;
+}
+
+.services .services-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1920px;
+    margin: auto;
+    position: relative;
+    height: 100%;
+}
+
+.services .services-container .services-intro {
+    position: sticky;
+    top: 130px;
+    height: 100%;
+}
+
+.services .services-container .services-intro p {
+    color: var(--font-color-gray);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.services .services-container .services-intro p span {
+    padding: 5px;
+    border: 3px solid var(--color-secondary);
+    border-radius: 50%;
+}
+
+.services .services-container .services-intro h2 {
+    font-weight: 300;
+    font-size: 45px;
+    text-transform: uppercase;
+    line-height: 55px;
+}
+
+.services .services-container .services-intro h2 span {
+    background: linear-gradient(135deg, var(--color-purple-light), var(--color-secondary), var(--color-dark-purple));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradientAnimation 3s ease infinite;
+}
+
+.services .general-services {
+    max-width: 550px;
+}
+
+.services .general-services .service {
+    border-bottom: 1px solid var(--color-gray-opacity);
+}
+
+.services .general-services .service .service-index {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--font-color-gray);
+    margin-top: 80px;
+}
+
+.services .general-services .service .service-title {
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--color-secondary);
+}
+
+.services .general-services .service .service-title span {
+    padding: 5px;
+    border: 3px solid var(--color-secondary);
+    border-radius: 50%;
+}
+
+.services .general-services .service .service-description {
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 80px;
+    font-weight: 300;
+    color: var(--font-color-gray);
+}
+
+.services .general-services .service:last-child {
+    border-bottom: none;
+}
+
+.services .general-services .service:last-child .service-description {
+    margin-bottom: 0;
+}
+
+.services .general-services .service:first-child .service-index {
+    margin-top: 0;
+}
