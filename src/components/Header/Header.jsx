@@ -5,7 +5,7 @@ export const Header = () => {
     return (
         <header>
             <div className="menu">
-                <a href="/" className="logo"><img src={logo} alt="Logo" height={"100px"}/></a>
+                <a href="/projeto-gupa-solutions" className="logo"><img src={logo} alt="Logo" height={"100px"}/></a>
 
                 <nav className="navbar">
                     <ul>
