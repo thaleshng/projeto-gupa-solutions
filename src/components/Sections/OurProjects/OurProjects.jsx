@@ -5,7 +5,7 @@ import "./OurProjects.css"
 
 export const OurProjetcs = () => {
     return (
-        <section className="our-projects">
+        <section className="our-projects" id="our-projects">
             <h2 className="our-projects-title">Nossos Projetos</h2>
             <div className="our-projects-container">
                 <div className="project">
