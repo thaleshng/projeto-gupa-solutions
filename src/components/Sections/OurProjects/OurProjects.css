@@ -1,0 +1,72 @@
+.our-projects {
+    background-color: var(--color-primary);
+    padding: 70px 0;
+    color: var(--font-color-white);
+}
+
+.our-projects .our-projects-title {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 60px 0;
+    text-align: center;
+}
+
+.our-projects .our-projects-container {
+    max-width: 1920px;
+    margin: auto;
+}
+
+.our-projects .our-projects-container .project {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.our-projects .our-projects-container .project:not(:first-child) {
+    flex-direction: row-reverse;
+    margin-top: 80px;
+}
+
+.our-projects .our-projects-container .project img{
+    border: 2px solid var(--color-gray-opacity);
+    border-radius: 15px;
+}
+
+.our-projects .our-projects-container .project .project-descriptions {
+    max-width: 700px;
+}
+
+.our-projects .our-projects-container .project .project-descriptions .project-title {
+    font-family: "Evanston Tavern", "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    margin-bottom: 25px;
+    color: var(--color-secondary);
+}
+
+.our-projects .our-projects-container .project .project-descriptions .description {
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: var(--font-color-gray);
+}
+
+.our-projects .our-projects-container .project .project-descriptions .used-skills-container .used-skills-title {
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 25px;
+    color: var(--color-secondary);
+}
+
+.our-projects .our-projects-container .project .project-descriptions .used-skills-container .used-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.our-projects .our-projects-container .project .project-descriptions .used-skills-container .used-skills .skill {
+    width: 50px;
+    border: none;
+}
