@@ -1,5 +1,6 @@
 import "./Hero.css"
 import heroVideo from "../../../assets/video/bg-tech.mp4"
+import portfolio from "../../../assets/archives/GUPASOLUTIONS_Portfolio.pdf"
 
 export const Hero = () => {
     return (
@@ -11,7 +12,7 @@ export const Hero = () => {
             <div className="hero-container">
                 <h1 className="hero-title">Nós somos, <br /><span>GUPASOLUTIONS.</span></h1>
 
-                <a href="#">Baixe nosso portfólio</a>
+                <a href={portfolio} target="_blank">Acesse nosso portfólio</a>
             </div>
         </section>
     )
