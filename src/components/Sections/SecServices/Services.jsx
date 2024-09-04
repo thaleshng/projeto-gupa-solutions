@@ -9,7 +9,7 @@ export const Services = () => {
                     <h2 className="services-intro-title">O que nossa <br /> empresa pode <br /> <span>fazer por você?</span></h2>
                 </div>
                 <div className="general-services">
-                    <div className="service">
+                    <div className="service show">
                         <p className="service-index"><span></span>01</p>
                         <h3 className="service-title">Desenvolvimento de Sistemas</h3>
                         <p className="service-description">Criamos novos sistemas personalizados a partir do zero, adaptados às necessidades específicas do seu negócio. Nosso foco está em entregar soluções eficientes, escaláveis e seguras, utilizando as mais recentes tecnologias de desenvolvimento.</p>

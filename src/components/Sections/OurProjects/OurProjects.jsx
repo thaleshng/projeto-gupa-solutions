@@ -28,9 +28,11 @@ export const OurProjetcs = () => {
                     </div>
                 </div>
                 <div className="project">
-                    <img src={tetraTech} alt="" />
+                    <div className="project-image">
+                        <img src={tetraTech} alt="" />
+                    </div>
                     <div className="project-descriptions">
-                    <h3 className="project-title">Tetra Tech</h3>
+                        <h3 className="project-title">Tetra Tech</h3>
                         <p className="description">Na TetraTech, colaboramos em uma série de projetos dentro da área de Engenharia, com especialização em barragens e estruturas geológicas. Atuamos de forma fullstack, abrangendo desde o backend até o frontend, além de desempenhar papéis chave na gestão de projetos. Nossa atuação inclui a liderança de equipes e a aplicação de princípios SCRUM, garantindo entregas pontuais e de alta qualidade.</p>
                         <div className="used-skills-container">
                             <h3 className="used-skills-title">Tecnologias e ferramentas utilizadas</h3>

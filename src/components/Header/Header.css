@@ -1,6 +1,6 @@
 header {
     background-color: var(--color-dark-purple-opacity);
-    padding: 10px 0;
+    padding: 10px 10px;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -24,6 +24,66 @@ header .menu .logo:hover {
     transform: scale(1.05);    
 }
 
+header .menu .navbar label {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+header .menu .navbar label .menu-hamburguer {
+    display: none;
+    height: 60px;
+    width: 60px;
+    align-self: flex-end;
+}
+
+header .menu .navbar label .menu-hamburguer .hamburguer {
+    height: 2px;
+    width: 30px;
+    background-color: var(--font-color-white);
+    display: block;
+    position: relative;
+    top: 29px;
+    right: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+header .menu .navbar label .menu-hamburguer .hamburguer::after, 
+header .menu .navbar label .menu-hamburguer .hamburguer::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--font-color-white);
+    transition: 0.3s ease-in-out;
+}
+
+header .menu .navbar label .menu-hamburguer .hamburguer::before {
+    top: -10px;
+}
+
+header .menu .navbar label .menu-hamburguer .hamburguer::after {
+    bottom: -10px;
+}
+
+header .menu .navbar input {
+    display: none;
+}
+
+header .menu .navbar input:checked ~ label .menu-hamburguer .hamburguer {
+    transform: rotate(45deg);
+}
+
+header .menu .navbar input:checked ~ label .menu-hamburguer .hamburguer::before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+header .menu .navbar input:checked ~ label .menu-hamburguer .hamburguer::after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
 header .menu .navbar ul {
     display: flex;
 }
@@ -42,4 +102,52 @@ header .menu .navbar ul li a:hover {
     box-shadow: 
     0 0 12px var(--color-secondary),
     0 0 20px var(--color-secondary);
+}
+
+@media(max-width: 1440px) {
+    header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media(max-width: 1280px) {
+    header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media(max-width: 900px) {
+    header .menu .navbar label .menu-hamburguer {
+        display: block;
+    }
+
+    header .menu .navbar input:checked ~ ul {
+        display: block;
+        position: relative;
+        right: 5%;
+    }
+
+    header .menu .navbar {
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        z-index: 1;
+    }
+
+    header .menu .navbar ul {
+        display: none;
+        padding: 20px;
+        background-color: var(--color-primary);
+        transition: 0.3s ease-in-out;
+        position: relative;
+    }
+
+
+    header .menu .navbar ul li a {
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
 }

@@ -8,6 +8,13 @@ export const Header = () => {
                 <a href="/projeto-gupa-solutions" className="logo"><img src={logo} alt="Logo" height={"100px"}/></a>
 
                 <nav className="navbar">
+                    <input type="checkbox" id="menu-hamburguer" />
+                    <label htmlFor="menu-hamburguer">
+                        <div className="menu-hamburguer">
+                            <span className="hamburguer"></span>
+                        </div>
+                    </label>
+
                     <ul>
                         <li><a href="#about">Sobre</a></li>
                         <li><a href="#services">Serviços</a></li>

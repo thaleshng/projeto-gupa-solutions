@@ -20,7 +20,7 @@
 .our-projects .our-projects-container .project {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .our-projects .our-projects-container .project:not(:first-child) {
@@ -28,9 +28,15 @@
     margin-top: 80px;
 }
 
-.our-projects .our-projects-container .project img{
+.our-projects .our-projects-container .project:last-child .project-image {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.our-projects .our-projects-container .project .project-image img{
     border: 2px solid var(--color-gray-opacity);
     border-radius: 15px;
+    width: 100%;
 }
 
 .our-projects .our-projects-container .project .project-descriptions {
@@ -69,4 +75,101 @@
 .our-projects .our-projects-container .project .project-descriptions .used-skills-container .used-skills .skill {
     width: 50px;
     border: none;
+}
+
+@media(max-width: 1280px) {
+    .our-projects {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .our-projects .our-projects-container .project .project-image img {
+        width: 90%;
+    }
+
+    .our-projects .our-projects-container .project .project-descriptions {
+        max-width: 50%;
+    }
+
+    .our-projects .our-projects-container .project .project-descriptions .project-title {
+        font-size: 32px;
+    }
+
+    .our-projects .our-projects-container .project .project-descriptions .description {
+        font-size: 16px;
+    }
+
+    .our-projects .our-projects-container .project .project-descriptions .used-skills-container .used-skills .skill {
+        width: 45px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .our-projects .our-projects-container .project .project-image img {
+        width: 95%;
+    }
+
+    .our-projects .our-projects-container .project .project-descriptions .project-title {
+        font-size: 28px;
+    }
+
+    .our-projects .our-projects-container .project .project-descriptions .description {
+        line-height: 22px;
+    }
+
+    .our-projects .our-projects-container .project .project-descriptions .used-skills-container .used-skills-title {
+        font-size: 22px;
+    }
+
+    .our-projects .our-projects-container .project .project-descriptions .used-skills-container .used-skills .skill {
+        width: 35px;
+    }
+}
+
+@media(max-width: 900px) {
+    .our-projects .our-projects-container .project {
+        flex-direction: column;
+    }
+
+    .our-projects .our-projects-container .project:not(:first-child) {
+        flex-direction: column;
+    }
+
+    .our-projects .our-projects-container .project .project-image {
+        width: 70%;
+    }
+
+    .our-projects .our-projects-container .project .project-image img {
+        width: 100%;
+    }
+
+    .our-projects .our-projects-container .project .project-descriptions {
+        max-width: 70%;
+    }
+
+    .our-projects .our-projects-container .project .project-descriptions .project-title {
+        font-size: 35px;
+    }
+
+    .our-projects .our-projects-container .project .project-descriptions .description {
+        font-size: 18px;
+    }
+
+    .our-projects .our-projects-container .project .project-descriptions .used-skills-container .used-skills-title {
+        font-size: 25px;
+    }
+
+    .our-projects .our-projects-container .project .project-descriptions .used-skills-container .used-skills .skill {
+        width: 50px;
+    }
+}
+
+@media(max-width: 500px) {
+    .our-projects .our-projects-container .project .project-image {
+        width: 100%;
+    }
+
+    .our-projects .our-projects-container .project .project-descriptions {
+        max-width: 100%;
+    }
 }

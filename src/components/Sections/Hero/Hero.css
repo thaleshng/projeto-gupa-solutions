@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    padding-top: 130px;
+    padding: 130px 10px 0 10px;
 }
 
 .hero .hero-video {
@@ -54,7 +54,6 @@
 
 .hero .hero-container a {
     color: #FFF;
-    align-self: center;
     padding: 15px;
     border-radius: 50px;
     background-color: var(--color-secondary);
@@ -70,4 +69,77 @@
     box-shadow:
         0 0 12px var(--color-secondary),
         0 0 20px var(--color-secondary);
+}
+
+@media(max-width: 1440px) {
+    .hero {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media(max-width: 1280px) {
+    .hero {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media(max-width: 900px) {
+    .hero .hero-container .hero-title span {
+        font-size: 110px;
+        top: -50px;
+    }
+}
+
+@media(max-width: 500px) {
+    .hero .hero-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero .hero-container .hero-title {
+        font-size: 50px;
+    }
+
+    .hero .hero-container .hero-title span {
+        font-size: 60px;
+        top: -20px;
+    }
+
+    .hero .hero-container a {
+        align-self: flex-start;
+        padding: 10px 15px;
+    }
+}
+
+@media(max-width: 440px) {
+    .hero .hero-container .hero-title span {
+        font-size: 55px;
+    }
+}
+
+@media(max-width: 410px) {
+    .hero .hero-container .hero-title {
+        font-size: 45px;
+    }
+
+    .hero .hero-container .hero-title span {
+        font-size: 50px;
+    }
+
+    .hero .hero-container a {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 374px) {
+    .hero .hero-container .hero-title {
+        font-size: 35px;
+    }
+
+    .hero .hero-container .hero-title span {
+        font-size: 40px;
+        top: -15px;
+    }
 }
