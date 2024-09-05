@@ -5,7 +5,7 @@ import portfolio from "../../../assets/archives/GUPASOLUTIONS_Portfolio.pdf"
 export const Hero = () => {
     return (
         <section className="hero">
-            <video autoPlay muted loop className="hero-video">
+            <video autoPlay muted loop className="hero-video" aria-label="Vídeo de fundo sobre tecnologia.">
                     <source src={heroVideo} type="video/mp4"/>
                     Seu navegador não suporta o elemento de vídeo.
             </video>

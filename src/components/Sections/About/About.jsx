@@ -7,7 +7,7 @@ export const About = () => {
         <section className="about" id="about">
             <h2 className="about-title">sobre nós</h2>
             <div className="about-container">
-                <img src={aboutImage} alt="" />
+                <img src={aboutImage} alt="Laptop em uma mesa com código na tela e monitor ao fundo." />
                 <div className="about-description">
                     <p>A <span>GUPASOLUTIONS</span> é uma empresa de tecnologia comprometida com a inovação e a excelência. </p>
                     <p>Nosso time é especializado em desenvolver soluções personalizadas que atendem às necessidades específicas de nossos clientes, sempre com foco em qualidade, agilidade e eficiência. Atuamos em projetos desafiadores, aplicando as melhores práticas do mercado e utilizando tecnologias de ponta para entregar resultados que superam as expectativas.</p>

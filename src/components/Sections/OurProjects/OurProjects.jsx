@@ -10,7 +10,7 @@ export const OurProjetcs = () => {
             <div className="our-projects-container">
                 <div className="project">
                     <div className="project-image">
-                        <img src={globalHitss} alt="" />
+                        <img src={globalHitss} alt="Logo GlobalHitss" />
                     </div>
                     <div className="project-descriptions">
                         <h3 className="project-title">Global Hitss/Claro</h3>
@@ -29,7 +29,7 @@ export const OurProjetcs = () => {
                 </div>
                 <div className="project">
                     <div className="project-image">
-                        <img src={tetraTech} alt="" />
+                        <img src={tetraTech} alt="Logo TetraTech" />
                     </div>
                     <div className="project-descriptions">
                         <h3 className="project-title">Tetra Tech</h3>
